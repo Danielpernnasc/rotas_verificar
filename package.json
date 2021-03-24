@@ -1,0 +1,74 @@
+{
+  "name": "autoescola-nascimento",
+  "version": "0.3.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-docs": "^6.1.17",
+    "@storybook/addon-knobs": "^6.1.17",
+    "@storybook/addon-viewport": "^6.1.17",
+    "@svgr/cli": "^5.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.6.2",
+    "chromatic": "^5.7.0",
+    "faker": "^5.4.0",
+    "history": "^5.0.0",
+    "jest-styled-components": "^7.0.3",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-scripts": "4.0.1",
+    "serve": "^11.3.2",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "cover": "yarn test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "lint": "eslint src/*.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.stories.js",
+      "!src/reportWebVitals.js",
+      "!src/index.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/node-logger": "^6.1.17",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.17"
+  }
+}
